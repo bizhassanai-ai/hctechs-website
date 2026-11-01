@@ -1,7 +1,11 @@
 
 /* HC Tech Brand Refresh — Home Page Only */
-
-.hc-home {
+:root {
+  color-scheme: dark;
+  --bg: #07121e;
+  --surface: #0b1b28;
+  --card: #142838;
+}.hc-home {
   --hc-navy: #081925;
   --hc-yellow: #f4c542;
   --hc-gray: #8e9ba6;
@@ -9,8 +13,25 @@
   --hc-white: #f4f7f9;
   color: var(--hc-white);
 }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Arial, "Noto Sans Thai", sans-serif;
+}
 
-.hc-home .hc-yellow {
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}.hc-home .hc-yellow {
   color: var(--hc-yellow);
 }
 
